@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>JSFundamentals</title>
+    </head>
+<body>
+    <script>
+        function add7(a){
+            return a+7
+        }
+        let multiply = (a,b) => a*b;
+        function capitalize(a){
+            a = a.toLowerCase();
+            a = a.charAt(0).toUpperCase() + a.slice(1);
+            return a   
+        }
+        let lastLetter = a => a.charAt(-1);
+        console.log(add7(5));
+        console.log(multiply(3,4));
+        console.log(capitalize('shikhar'));
+        console.log(lastLetter('abcd'));
+    </script>
+</body>
+</html>

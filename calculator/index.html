@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="calculator">
+            <div id="display">
+                <input type="text" id="display-screen" class="calculator-screen" value="0">
+            </div>
+            <div class="calculator-keys">
+                <button type="button" class="operator" id="mul" value="*">x</button>
+                <button type="button" class="operator" id="add" value="+">+</button>
+                <button type="button" class="operator" id="sub" value="-">-</button>
+                <button type="button" class="operator" id="div" value="/">/</button>
+
+                
+                <button type="button" class="number" value="7" data-key='55'>7</button>
+                <button type="button" class="number" value="8" data-key='56'>8</button>
+                <button type="button" class="number" value="9" data-key='57'>9</button>
+                
+                <button type="button" class="number" value="4" data-key='52'>4</button>
+                <button type="button" class="number" value="5" data-key='53'>5</button>
+                <button type="button" class="number" value="6" data-key='54'>6</button>
+                
+                
+                <button type="button" class="number" value="1" data-key='49'>1</button>
+                <button type="button" class="number" value="2" data-key='50'>2</button>
+                <button type="button" class="number" value="3" data-key='51'>3</button>
+                <button type="button" class="number" value="0" data-key='48'>0</button>
+
+
+                <button type="button" class="number" value=".">.</button>
+                <button type="button" class="all-clear operations" id="all-clear" value="all-clear">AC</button>
+                <button type="button" id='equal-sign' class="equal-sign operations" value="=">=</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

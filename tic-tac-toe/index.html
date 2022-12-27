@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Tic-tac-toe</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 id="title">TIC TAC TOE</h1>
+        <button id="new-game" class="buttons" value="new">NEW GAME</button>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <div id="board" class="board">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+        </div>
+        <div id="modal-startgame">
+            <div id='modal-startgame-content'>
+                <div id="startgame-header">Welcome to Tic-Tac-Toe!</div>
+                <label id="label-p1-input">
+                    Player 1: <input type="text" id="p1-input">
+                </label>
+                <label id="label-p2-input">
+                    Player 2: <input type="text" id="p2-input">
+                </label>
+                <div id="startgame-button-div">
+                    <button id="startgame-button">Let's play!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>

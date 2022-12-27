@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: latha;
+    color:white;
+    background: linear-gradient( rgba(0,0,0,0.65),rgba(0,0,0,0.65),rgba(0,0,0,0.38),rgba(0,0,0,0))
+        ,url(./extra/pizza-background-hd-1920x1080-390198.jpg)no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #24252a;
+}
+
+.logo{
+  margin-right: auto;
+}
+
+.nav__links{
+  list-style: none;
+  display: flex;
+}
+
+.nav__links a,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.info{
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.hero__font {
+  color:#ffffff;
+  font-weight: bold;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 3rem;
+}
+
+.card-container {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+  justify-content: center;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #24252A;
+  height: 20rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(14, 13, 13);
+}
+
+.text {
+  padding: 20px;
+  margin: auto;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+
+.form{
+  width:340px;
+  height:440px;
+  background:#e6e6e6;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative
+}
+h2{
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#78788c;
+  border-bottom:3px solid #78788c
+}
+input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2
+}
+input:focus{
+  border-bottom:2px solid #78788c
+}
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+button{
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  background:0;
+  color:#5a5a6e;
+  cursor:pointer;
+  transition:all .3s
+}
+button:hover{
+  background:#78788c;
+  color:#fff
+}
+.form-div{
+  content:'Hi';
+  position:absolute;
+  bottom:-15px;
+  right:-20px;
+  background:#50505a;
+  color:#fff;
+  width:320px;
+  padding:16px 4px 16px 0;
+  border-radius:6px;
+  font-size:13px;
+  box-shadow:10px 10px 40px -14px #000
+}
+span{
+  margin:0 5px 0 15px
+}

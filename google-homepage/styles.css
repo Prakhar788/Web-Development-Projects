@@ -1,0 +1,144 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+header {
+    position: relative;
+    padding: 15px 0;
+}
+header nav {
+    position: absolute;
+    right: 25px;
+}
+header nav ul {
+    display: inline-block;
+}
+li {
+    display: inline;
+}
+header nav li a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 5px;
+    line-height: 24px;
+    margin: 0 1px;
+}
+.top-nav:hover{
+    text-decoration: underline;
+}
+.top-nav-button{
+    display: inline-block;
+    line-height: 28px;
+    color: #ffffff;
+    background-color: #4583ec;
+    padding: 0px 12px;
+    margin: 0 5px;
+    font-weight: 700;
+    border: 1px solid #4583ec;
+    border-radius: 2px;
+}
+/* Top Nav Styling ends here */
+.logo-search {
+    margin: 125px 0;
+    text-align: center;
+}
+.logo-search img {
+    margin: 12px auto;   /* centers the google logo horizontally */
+}
+/* Styling search field */
+main .logo-search .search-box{
+    border: 1px solid #eaeaeb;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 25px;
+}
+input[type="search"] {
+    padding: 10px 150px;
+    margin: 4px 22px;
+    border: none;
+}
+main .logo-search .search-box:hover{
+    box-shadow: 1px 1px 5px #c9c6c6;
+}
+input[type="submit"]{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 0.7);
+    line-height: 27px;
+    margin: 12px 3px;
+    padding: 5px 17px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border: none;
+}
+input[type="submit"]:hover{
+    border: 1px solid #c9c7c7;
+    color: #222222;
+}
+/* Styling the body navigations */
+main p a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #1a0dab;
+}
+main p a:hover {
+    text-decoration: underline;
+}
+main p {
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+main p span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 28px;
+}
+.languages {
+    padding: 0 5px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #f2f2f2;
+}
+footer p {
+    padding: 12px 31px;
+    color: #0000008a;
+    font-size: 15px;
+    font-weight: 400;
+    border-top: 1px solid rgba(206, 206, 207, 0.4);
+    border-bottom: 1px solid rgba(206, 206, 207, 0.4);
+}
+footer nav li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #5f6368;
+    padding: 5px;
+    line-height: 40px;
+}
+footer nav li a:hover {
+    text-decoration: underline;
+}
+footer .bottom-left-nav ul{
+    float: left;
+    padding-left: 25px; 
+}
+footer .bottom-right-nav ul{
+    float: right;
+    padding-left: 25px; 
+}
+footer .bottom-left-nav li a{
+    padding-right: 25px; 
+}
+footer .bottom-right-nav li a{
+    padding-left: 25px; 
+}
+

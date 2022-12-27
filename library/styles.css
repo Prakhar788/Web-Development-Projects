@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header{
+    margin-top: 60px;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 2px;
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.container {
+    display: none;
+    z-index: 1;
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 39%;
+}
+
+#contact input[type="text"],
+#contact input[type="number"],
+#contact button[type="submit"]
+#contact button[type="radio"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background-color: #fefefe; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: 15% auto;
+}
+
+#contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="number"],
+#contact input[type="radio"]{
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="number"]:hover,
+#contact input[type="radio"]:hover{
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact #submit {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+#contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#popup-form {
+    display: none;
+}
+  
+.buttons{
+    margin-right: 25px;
+    display: inline-block;
+    text-align: center;
+    color: #494949;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949;
+    transition: all 0.4s ease 0s;
+}
+  
+.buttons:hover {
+    color: #ffffff !important;
+    background: #4c5856;
+    border-color: #191306 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.buttons{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.card-container {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #222831;
+    height: 20rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    min-width: max-content;
+    transition: 0.3s;
+    color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(14, 13, 13);
+}
+
+.text {
+    padding: 20px;
+    margin: auto;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.main{
+    color: white;
+    padding: 0.1rem;
+}
+
+.book-read {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+}

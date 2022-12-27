@@ -1,0 +1,83 @@
+<html>
+    <header>
+        <title>Rock-Paper-Scissor</title>
+    </header>
+    <body>
+        <h1>
+            Rock-Paper-Scissor(Open console to play)
+        </h1>
+        <script>
+            function getRandomInt(max){
+                return Math.floor(Math.random() * Math.floor(max));
+            }
+            function computerPlay(n){
+                if (n == 0){
+                    return 'Rock';
+                }
+                else if (n == 1){
+                    return 'Paper';
+                }
+                else if (n == 2){
+                    return 'Scissor';
+                }
+            }
+            function playRound(playerSelection, computerSelection){
+                playerSelection = playerSelection.toUpperCase();
+                computerSelection = computerSelection.toUpperCase();
+                let result = "";
+                let winner = "";
+                if (playerSelection == "ROCK" && computerSelection == "SCISSOR"){
+                    winner = "Player";
+                    result = `${winner} wins! ${playerSelection} beats ${computerSelection}`;
+                }
+                else if (playerSelection == "SCISSOR" && computerSelection == "PAPER"){
+                    winner = "Player";
+                    result = `${winner} wins! ${playerSelection} beats ${computerSelection}`;
+                }
+                else if (playerSelection == "PAPER" && computerSelection == "ROCK"){
+                    winner = "Player";
+                    result = `${winner} wins! ${playerSelection} beats ${computerSelection}`;
+                }
+                else if (computerSelection == "ROCK" && playerSelection == "SCISSOR"){
+                    winner = "Computer";
+                    result = `${winner} wins! ${computerSelection} beats ${playerSelection}`;
+                }
+                else if (computerSelection == "SCISSOR" && playerSelection == "PAPER"){
+                    winner = "Computer";
+                    result = `${winner} wins! ${computerSelection} beats ${playerSelection}`;
+                }
+                else if (computerSelection == "PAPER" && playerSelection == "ROCK"){
+                    winner = "Computer";
+                    result = `${winner} wins! ${computerSelection} beats ${playerSelection}`;
+                }
+                else if (playerSelection==computerSelection){
+                    result = "Tie";
+                }
+                return result;
+            }
+            function game(){
+                let PlayerCount = 0;
+                let ComputerCount = 0;
+                for(let i = 0; i < 5;i++){
+                    let playerSelection = prompt("Rock, Paper or Scissor");
+                    let computerSelection = computerPlay(getRandomInt(3));
+                    let RoundResult = playRound(playerSelection,computerSelection);
+                    console.log(RoundResult);
+                    if (RoundResult.indexOf("Player") >= 0){
+                        PlayerCount += 1;
+                    }
+                    else if(RoundResult.indexOf("Computer") >= 0){
+                        ComputerCount += 1
+                    }
+                }
+                if (PlayerCount > ComputerCount){
+                    return "You beat Computer!"
+                }
+                else{
+                    return "Computer beats You!"
+                }
+            }
+            console.log(game());
+        </script>
+    </body>
+</html>

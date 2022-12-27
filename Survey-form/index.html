@@ -1,0 +1,140 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">
+      Just a Survey form!</h1>
+    <p id="description" class="description text-center">
+      Front-end is boring.</p>
+    </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name: </label>
+      <input
+             name="name"
+             type="text"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label for="email" id="email-label">Email: </label>
+      <input
+             name="email"
+             type="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your Email id"
+             required
+       />
+    </div>
+    
+    <div class="form-group">
+      <label for="number" id="number-label">Rating: </label>
+      <input
+             id="number"
+             name="rating"
+             type="number"
+             min="1"
+             max="10"
+             class="form-control"
+             placeholder="Number"
+      />
+      
+    <div class="form-group">
+      <p>Poison of Choice: </p>
+      <label>
+        <input
+               name="user-recommend"
+               value="alcohol"
+               type="radio"
+               class="input-radio"
+               checked
+               />Alcohol</label>
+      <label>
+        <input
+               name="user-recommend"
+               value="weed"
+               type="radio"
+               class="input-radio"
+               />Weed</label>
+        <label>
+        <input
+               name="user-recommend"
+               value="cigarette"
+               type="radio"
+               class="input-radio"
+               checked
+               />Cigarette
+        </label>
+    
+    <div class="form-group">
+      <label for="status" id="status-label">Relationship Status: </label>
+      <select name="status" id="dropdown" class="form-control" required>
+        <option disabled selected value="">Select your current status</option>
+        <option value="single">Single</option>
+        <option value="committed">In a Relationship</option>
+        <option value="Not available">Not Available</option>
+        <option value="complicated">It's Complicated</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Which company would you like to work for?</p>
+      
+      <label>
+        <input name="prefer"
+               value="microsoft"
+               type="checkbox"
+               class="input-checkbox"/>Microsoft
+      </label>
+     <label>
+        <input name="prefer"
+               value="google"
+               type="checkbox"
+               class="input-checkbox"/>Google
+      </label>
+     <label>
+        <input name="prefer"
+               value="facebook"
+               type="checkbox"
+               class="input-checkbox"/>Facebook
+      </label>
+     <label>
+        <input name="prefer"
+               value="amazon"
+               type="checkbox"
+               class="input-checkbox"/>Amazon
+      </label>
+      <label>
+        <input name="prefer"
+               value="netflix"
+               type="checkbox"
+               class="input-checkbox"/>Netflix
+      </label>
+     <label>
+       Other: 
+        <input name="prefer"
+               type="text"
+               class="input-checkbox"/>
+      </label>
+    </div>
+      <div class="form-group">
+        <p>Kuch kehna chahte ho?: </p>
+        <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="textarea"
+                  placeholder="Likhiye..."
+                  ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <input type="submit" id="submit" class="submit-button"/>
+    </div>
+  </form>
+  
+</div>

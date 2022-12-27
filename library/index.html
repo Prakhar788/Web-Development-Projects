@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Library</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+    <h1>MY LIBRARY</h1>
+    <button id="New-book" class="buttons" value="add">Add new book</button>
+    </div>
+    <div class="container" id="popup-form">
+        <form id="contact" class="modal-content">
+            <h3>Enter book details:</h3>
+            
+            <fieldset>
+                <input id="bookname" placeholder="Book's name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            
+            <fieldset>
+                <input id="author" placeholder="Author's name" type="text" tabindex="2" required>
+            </fieldset>
+            
+            <fieldset>
+                <input id="pages" placeholder="No. of pages" type="text" tabindex="1" required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="status">Check this box if you've read it:&nbsp;&nbsp;</label>
+                <input type="checkbox" name="status" id="status">
+            </fieldset>
+            
+            <fieldset>
+                <button name="submit" type="submit" id="submit" >Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="card-container" class="card-container"></div>
+</body>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+<script type="text/javascript" src="firebase.js"></script>
+<script type="text/javascript" src="script.js"></script>
